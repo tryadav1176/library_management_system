@@ -59,6 +59,12 @@ python app.py
 
 ![image](https://github.com/user-attachments/assets/cb440636-a8f5-496c-a3da-d2ae8bbf6c9d)
 
+
+---
+
+Let me know if you want me to include a **requirements.txt**, **SQL file**, or generate this into a downloadable zip for your project folder.
+
+
 ## 👨‍💻 Author
  Tejas Yadav
  

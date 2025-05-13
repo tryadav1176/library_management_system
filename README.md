@@ -9,8 +9,7 @@ A simple web-based Library Management System built using **Flask (Python)** and 
 - ✅ Add new books with title, author, and publication year
 - ✅ View all added books in a tabular format
 - ✅ Edit or delete individual book records
-- ✅ Toggle visibility of the books table (Show/Close)
-- ❌ (Optional: File upload for cover image was removed)
+- ✅ Toggle visibility of the books table 
 
 ---
 
@@ -51,11 +50,12 @@ CREATE TABLE books (
     year INT
 );
 ```
-Note: If you don't have the mysql database, then install it and run the step 4.
+Note: If you don't have the mysql database, then install it and run the step 4
 
 ### 5. Run the project.py file
 ```bash
 python app.py
 ```
 
+![image](https://github.com/user-attachments/assets/cb440636-a8f5-496c-a3da-d2ae8bbf6c9d)
 

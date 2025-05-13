@@ -60,5 +60,5 @@ python app.py
 ![image](https://github.com/user-attachments/assets/cb440636-a8f5-496c-a3da-d2ae8bbf6c9d)
 
 ## 👨‍💻 Author
-    - Tejas Yadav
-    - [Tejas-Yadav](https://www.linkedin.com/in/tejasyadav1512)
+ Tejas Yadav
+ [TejasYadav](https://www.linkedin.com/in/tejasyadav1512)

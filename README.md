@@ -30,7 +30,7 @@ A simple web-based Library Management System built using **Flask (Python)** and 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/library-management.git
+git clone https://github.com/tryadav1176/library-management.git
 cd library-management
 ```
 ### 2. Set up the Virtual Environment

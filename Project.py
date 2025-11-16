@@ -25,7 +25,7 @@ def index():
         cursor.execute("INSERT INTO books (title, author, year) VALUES (%s, %s, %s)", (title, author, year))
         mysql.connection.commit()
     cursor.execute("SELECT * FROM books")
-    books = cursor.fetchall()
+    books = cursor.fetchall() 
     cursor.close()
     return render_template('index.html', books=books)
 

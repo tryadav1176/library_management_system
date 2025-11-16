@@ -6,26 +6,60 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
             background-color: #f5f5f5;
+            margin-inline: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        h2 {
-            color: #333;
-        }
-        form {
-            margin-bottom: 20px;
+
+        .hero-section {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        input[type="text"], input[type="number"] {
-            padding: 8px;
-            margin: 5px 0;
+            height: 400px;
             width: 100%;
-            border: 1px solid #ccc;
-            border-radius: 5px;
         }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        #button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            height: auto;
+            margin: 2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 1rem;
+            border: 1px solid #6f6e6e;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            color: #333;
+        }
+
         button {
             padding: 10px 15px;
             margin-top: 10px;
@@ -34,7 +68,9 @@
             color: white;
             border-radius: 5px;
             cursor: pointer;
+            width: auto;
         }
+
         button:hover {
             background-color: #0056b3;
         }
@@ -55,6 +91,19 @@
         }
     </style>
     <script>
+        function openForm() {
+            const form = document.getElementById("form-data");
+            const button = document.getElementById("button");
+            if (form.style.display === "none") {
+                
+                button.textContent = "Close Form";
+                form.style.display = "flex";
+            } else{
+                form.style.display = "none";
+                button.textContent = "Add a Book";
+            }
+        }
+
         function toggleTable() {
             const tableDiv = document.getElementById("book-table");
             const btn = document.getElementById("toggle-btn");
@@ -69,15 +118,33 @@
     </script>
 </head>
 <body>
-    <h2>Library Management</h2>
 
-    <form method="POST" action="/">
-        <label>Title:</label>
-        <input type="text" name="title" required><br>
-        <label>Author:</label>
-        <input type="text" name="author" required><br>
-        <label>Year:</label>
-        <input type="number" name="year" required><br>
+    <h1> Welcome to the CRUD Operations using Python and MySQL project</h1>
+
+    <div class="hero-section">  
+
+        <h2>Library Management</h2>
+
+        <p>The Library Management System is a simple and efficient web application designed to manage books digitally.
+            It allows users to add new books, edit details, view the complete collection, and delete records with ease. 
+            Built using Flask, MySQL, HTML, CSS, and JavaScript, the system provides a clean interface and smooth user experience. 
+            With features like a show/hide book list and quick editing options, it eliminates manual record-keeping and helps maintain 
+            organized, accurate book data for students, libraries, or personal use.</p>
+        <p>- Add new books with title, author, and publication year</p>
+        <p>- View all added books in a tabular format</p>
+        <p>- Edit or delete individual book records</p>
+        <p>- Toggle visibility of the books table </p>
+
+        <button id="button" onclick="openForm()">Add a Book</button>
+    </div>
+
+    <form id="form-data" method="POST" action="/" style="display: none;">
+        <input type="text" placeholder="Title" required><br>
+
+        <input type="text" placeholder="Author" required><br>
+
+        <input type="number" placeholder="Number" required><br>
+
         <button type="submit">Add Book</button>
     </form>
 
